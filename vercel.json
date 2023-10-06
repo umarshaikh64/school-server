@@ -7,6 +7,12 @@
             "config": { "includeFiles": ["dist/**"] }
         }
     ],
+
+        "routes": [{
+        "src": "/api/v1(.*)",
+        "dest": "dist/router//index.js"
+    }]
+
     
-    "rewrites": [{ "source": "/api/v1/(.*)", "destination": "dist/router/" }]
+  
 }
